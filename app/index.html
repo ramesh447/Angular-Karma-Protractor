@@ -1,0 +1,23 @@
+
+<!-- index.html -->
+    <!DOCTYPE html>
+    <html ng-app="app">
+    <head>
+      <!-- SCROLLS -->
+      <!-- load bootstrap and fontawesome via CDN -->
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+
+      <!-- SPELLS -->
+      <!-- load angular and angular route via CDN -->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+   
+      <script src="app.js"></script>
+    </head>
+    <body ng-controller="HelloController">
+        <h2>Say something</h2>
+<input type="text" ng-model="newText">
+<button class="btn btn-default" ng-click="changeGreeting()">Change!</button>
+<p id="greeting">{{ message }}</p>
+        </body>
+</html>
